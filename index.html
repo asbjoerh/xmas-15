@@ -3,26 +3,70 @@
 
 <head>
   <meta charset="utf-8">
-  <title>404</title>
+  <title>HTTP status</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+    integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
   <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    h1 {
-      font-size: min(75vw, 75vh);
+    main {
+      max-width: 50rem;
+      margin: 0 auto;
     }
   </style>
 </head>
 
 <body>
-  <h1>404</h1>
+  <main>
+    <h1>HTTP status koder</h1>
+    <img src="https://i.imgur.com/GpY6bTJ.png" alt="" />
+    <p>Siden dere nå har lært alt om HTML, CSS, JS, DNS, React og litt til så er det på tide å se på HTTP status koder.
+      Det er
+      63 stk av dem totalt og nei, du trenger ikke lære alle sammen.</p>
+
+    <p>Når en nettleser ber om få en bestemt nettside eller bestemte data fra en nettside så <i>kan</i> det jo hende at
+      ikke
+      alt
+      bare er ok. Så da trenger serveren en måte å få gitt beskjed om evt feil etc til nettleseren. Og da brukes HTTP
+      status
+      koder.</p>
+
+    <p>Den aller korteste oppsummeringen og det eneste du trenger å huske er dette:</p>
+    <ul>
+      <li>200 og oppover: alt ok</li>
+      <li>400 og oppover: du gjorde noe feil</li>
+      <li>500 og oppover: serveren gjorde noe feil</li>
+    </ul>
+
+    <p>Programmere har av og til litt intern og nerdete humor så det er selvfølgelig noen som har skapt litt humor rundt
+      HTTP
+      også. 1.april 1998 ble <a href="https://www.ietf.org/rfc/rfc2324.txt">RFC - 2324 Hyper Text Coffee Pot Control
+        Protocol
+        (HTCPCP/1.0)</a> publisert som en aprilspøk og der ble blant annet statuskoden 418
+      definert:</p>
+
+    <blockquote>Any attempt to brew coffee with a teapot should result in the error code "418 I'm a teapot". The
+      resulting
+      entity body
+      MAY be short and stout.</blockquote>
+
+    <p>Og siden har denne aprilspøken funnet veien inn i mange systemer, og ja den brukes også i vårt LMS.</p>
+
+    <p>Syns du det blir for tørt og kjedelig med bare tekstlige oppramsinger av statuskode og tekst så finnes det
+      selvfølgelig
+      alternative for de som evt liker <a href="https://http.cat/">katter</a>, <a href="https://http.dog/">hunder</a>,
+      <a href="https://http.garden">hage</a>
+      eller <a href="https://httbey.com/">Beyonce</a>.
+    </p>
+
+    <p>Hvis du se en oversikt over alle kodene som er tilgjengelig så finner du det her:
+      <a href="https://www.webfx.com/web-development/glossary/http-status-codes/">HTTP Status Codes Glossary</a>
+    </p>
+
+    <p>Vil du gå ennå mer i dybden, les hele <a href="https://datatracker.ietf.org/doc/html/rfc7231">RFC 7231 -
+        Hypertext
+        Transfer Protocol (HTTP/1.1): Semantics and
+        Content</a></p>
+
+  </main>
 </body>
 
 </html>
